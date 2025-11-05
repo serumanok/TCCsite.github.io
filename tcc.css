@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #0B2447;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/*cabeçalho*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5vh;
+    padding: 1vw 0;
+    font-size: 1.5vw;
+
+}
+
+header h1 {
+    flex: 1;
+    margin-left: 20vw;
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+    margin-right: auto;
+    margin-left: 2vw;
+    font-size: 1.25vw;
+    background-color: #0E7C86;
+    padding: 0.5vw;
+    border-radius: 10px;
+}
+
+header a:hover{
+    text-decoration: wavy underline;
+}
+/*links*/
+
+#links {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 0;
+    font-size: 1.5vw;
+}
+
+/*section*/
+section {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    height: 90vh;
+}
+
+section p {
+    background-color: transparent;
+    width: 60vw;
+    position: absolute;
+    text-align: center;
+    font-size: 5vw;
+}
+
+/*main*/
+
+main {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.parallax {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 2vh 0;
+}
+
+.parallax-item {
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 0 2vw;
+    transition: transform 0.3s ease;
+}
+
+.parallax-item:hover {
+    transform: scale(1.02);
+}
+
+.parallax-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+.nome {
+    position: relative;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.nome:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+/* Imagens dos integrantes */
+.img1 { background-image: url('membro1.jpg'); }
+.img2 { background-image: url('membro1.jpg'); }
+.img3 { background-image: url('membro1.jpg'); }
+.img4 { background-image: url('membro1.jpg'); }
+.img5 { background-image: url('membro1.jpg'); }
+
+.TCC {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    margin-bottom: 8vh;
+    padding: 0 4vw;
+}
+
+.secao {
+    text-align: left;
+    padding: 2vh 3vw;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.secao:hover {
+    transform: translateX(10px);
+}
+
+.secao h2 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+    background-color: transparent;
+}
+
+.secao p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: transparent;
+}
+
+
